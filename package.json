@@ -17,7 +17,8 @@
     "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "express": "^5.2.1",
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.11",
+    "pretty-magnetic": "file:../pretty-magnetic"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
