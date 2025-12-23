@@ -1,0 +1,41 @@
+message{
+  margin: 0 16px;
+  display:none;
+  position:fixed;
+  margin-top: env(safe-area-inset-top);
+  top:24px;
+
+  animation: messageIn 0.7s, messageOut 0.7s 3s;
+  animation-timing-function: cubic-bezier(0.6, -0.14, 0.02, 1.29);
+
+  padding:8px 16px;
+  border-radius:24px;
+  user-select: none;
+
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+  box-shadow: 0px 0px 32px -10px var(--md-sys-color-secondary-container);
+  z-index: 20;
+}
+message.unactive{display:none; animation: messageOut 0.7s}
+/* @keyframes messageIn {from{top:-12px;}to{top: 12px;}}
+@keyframes messageOut {from{top:12px;}to{top: -32px;}} */
+
+@keyframes messageIn {from{transform: translateY(-80px);}to{transform: translateY(0px)}}
+@keyframes messageOut {from{transform: translateY(0px);}to{transform: translateY(-80px)}}
+
+message.error{
+  background:var(--md-sys-color-error-container);
+  color:var(--md-sys-color-on-error-container);
+  box-shadow: 0px 0px 32px -10px var(--md-sys-color-error-container);
+  animation: messageIn 0.7s, messageOut 0.7s 3s, errorAnimation 250ms;
+}
+
+@keyframes errorAnimation {
+  0% {transform: translateX(-2px);}
+  25% {transform: translateX(2px);}
+  50% {transform: translateX(-2px);}
+  75% {transform: translateX(2px);}
+  100% {transform: translateX(0);}
+}
+

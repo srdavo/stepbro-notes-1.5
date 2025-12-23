@@ -1,0 +1,42 @@
+:root,
+:host {
+  color-scheme: light dark;
+  --md-sys-color-background: #1A1A1A; /* Gris muy oscuro, casi negro, fondo NEUTRO y profesional para modo oscuro (REVISADO) */
+  --md-sys-color-on-background: #F2EFE0; /* Beige claro cálido para texto sobre fondo oscuro NEUTRO, mantiene legibilidad cálida */
+  --md-sys-color-surface: #1A1A1A; /* Gris muy oscuro para superficies oscuras NEUTRAS, coherencia y sobriedad */
+  --md-sys-color-surface-dim: #1A1A1A; /* Igual que surface para dim en modo oscuro corporativo naranja NEUTRO */
+  --md-sys-color-surface-bright: #303030; /* Gris oscuro para superficie brillante en oscuro NEUTRO, diferenciación profesional */
+  --md-sys-color-surface-container-lowest: #101010; /* Contenedor más bajo, negro casi puro NEUTRO */
+  --md-sys-color-surface-container-low: #202020; /* Contenedor bajo, gris muy oscuro NEUTRO */
+  --md-sys-color-surface-container: #282828; /* Contenedor estándar en modo oscuro corporativo naranja NEUTRO, gris medio oscuro */
+  --md-sys-color-surface-container-high: #333333; /* Contenedor alto, gris ligeramente más claro NEUTRO */
+  --md-sys-color-surface-container-highest: #3D3D3D; /* Contenedor más alto, el más claro de los contenedores grises oscuros NEUTROS */
+  --md-sys-color-on-surface: #F2EFE0; /* Beige claro cálido para texto sobre superficies oscuras NEUTRAS, consistente con on-background */
+  --md-sys-color-surface-variant: #303030; /* Variante de superficie, gris oscuro NEUTRO, textura profesional */
+  --md-sys-color-on-surface-variant: #CDC5BE; /* Marrón grisáceo muy claro para texto en variante de superficie oscura NEUTRA, sutileza profesional cálida */
+  --md-sys-color-inverse-surface: #F2EFE0; /* Superficie inversa, beige claro cálido para modo oscuro corporativo naranja NEUTRO */
+  --md-sys-color-inverse-on-surface: #3A332E; /* Marrón oscuro cálido para texto sobre superficie inversa clara, contraste inverso cálido */
+  --md-sys-color-outline: #78716C; /* Bordes en modo oscuro, marrón suave y profesional (SIN CAMBIOS) */
+  --md-sys-color-outline-variant: #3D3732; /* Bordes variantes en oscuro corporativo naranja (SIN CAMBIOS) */
+  --md-sys-color-shadow: #000000; /* Sombra estándar, negro */
+  --md-sys-color-scrim: #000000; /* Scrim, negro */
+  --md-sys-color-surface-tint: #FFC988; /* Naranja pálido para tinte de superficie, suavidad profesional y cálida (SIN CAMBIOS) */
+  --md-sys-color-primary: #FFC988; /* Naranja pálido, primario principal en modo oscuro Corporativo Naranja (SIN CAMBIOS) */
+  --md-sys-color-on-primary: #000000; /* Negro para texto sobre primario naranja pálido (SIN CAMBIOS) */
+  --md-sys-color-primary-container: #F47700; /* Naranja intenso, contenedor de primario en modo oscuro Corporativo Naranja (SIN CAMBIOS) */
+  --md-sys-color-on-primary-container: #FFFFFF; /* Blanco para texto sobre contenedor primario naranja intenso (SIN CAMBIOS) */
+  --md-sys-color-inverse-primary: #F47700; /* Primario inverso, repitiendo el tono del contenedor primario naranja intenso (SIN CAMBIOS) */
+  --md-sys-color-secondary: #B9A598; /* Marrón grisáceo claro, secundario en modo oscuro Corporativo Naranja (SIN CAMBIOS) */
+  --md-sys-color-on-secondary: #000000; /* Negro para texto sobre secundario marrón grisáceo claro (SIN CAMBIOS) */
+  --md-sys-color-secondary-container: #6E5A4D; /* Marrón grisáceo medio oscuro, contenedor de secundario (SIN CAMBIOS) */
+  --md-sys-color-on-secondary-container: #FFFFFF; /* Blanco para texto en contenedor secundario marrón grisáceo medio (SIN CAMBIOS) */
+  --md-sys-color-tertiary: #B9A598; /* Marrón grisáceo claro, terciario en modo oscuro Corporativo Naranja (SIN CAMBIOS) */
+  --md-sys-color-on-tertiary: #000000; /* Negro para texto sobre terciario marrón grisáceo claro (SIN CAMBIOS) */
+  --md-sys-color-tertiary-container: #877366; /* Marrón grisáceo medio, contenedor de terciario (SIN CAMBIOS) */
+  --md-sys-color-on-tertiary-container: #FFFFFF; /* Blanco para texto en contenedor terciario marrón grisáceo medio (SIN CAMBIOS) */
+  --md-sys-color-error: #FFB3A8; /* Rojo coral claro para error en modo oscuro Corporativo Naranja (SIN CAMBIOS) */
+  --md-sys-color-on-error: #000000; /* Negro para texto sobre error rojo coral claro (SIN CAMBIOS) */
+  --md-sys-color-error-container: #B00020; /* Rojo oscuro, contenedor de error en modo oscuro Corporativo Naranja (SIN CAMBIOS) */
+  --md-sys-color-on-error-container: #FFDAD6; /* Beige muy claro para texto en contenedor de error rojo oscuro (SIN CAMBIOS) */
+  --md-sys-color-surface-variant-variant: var(--md-ref-palette-neutral-variant20); /* Variable de superficie variante para oscuro Corporativo Naranja (SIN CAMBIOS) */
+}

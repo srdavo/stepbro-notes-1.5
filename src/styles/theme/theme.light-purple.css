@@ -1,0 +1,40 @@
+:root,
+:host {
+  --md-sys-color-background: #fef7ff;
+  --md-sys-color-on-background: #1e1a25;
+  --md-sys-color-surface: #fef7ff;
+  --md-sys-color-surface-dim: #dfd7e7;
+  --md-sys-color-surface-bright: #fef7ff;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f9f1ff;
+  --md-sys-color-surface-container: #f3ebfb;
+  --md-sys-color-surface-container-high: #eee5f5;
+  --md-sys-color-surface-container-highest: #e8dff0;
+  --md-sys-color-on-surface: #1e1a25;
+  --md-sys-color-surface-variant: #e9def6;
+  --md-sys-color-on-surface-variant: #4a4456;
+  --md-sys-color-inverse-surface: #332e3b;
+  --md-sys-color-inverse-on-surface: #f6edfe;
+  --md-sys-color-outline: #7b7488;
+  --md-sys-color-outline-variant: #ccc2d9;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-surface-tint: #7516fa;
+  --md-sys-color-primary: #5e00d0;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #853fff;
+  --md-sys-color-on-primary-container: #ffffff;
+  --md-sys-color-inverse-primary: #d2bcff;
+  --md-sys-color-secondary: #6c4ab0;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #bfa0ff;
+  --md-sys-color-on-secondary-container: #300072;
+  --md-sys-color-tertiary: #8b007b;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #c322ad;
+  --md-sys-color-on-tertiary-container: #ffffff;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+}

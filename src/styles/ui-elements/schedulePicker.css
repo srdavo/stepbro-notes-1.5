@@ -1,0 +1,140 @@
+.schedule-picker-container{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.schedule-picker-container .day-row{
+    border-bottom: 1px solid var(--md-sys-color-surface-container);
+}
+.schedule-picker-container .day-row:last-child{
+    border-bottom: none;
+}
+/* .schedule-picker-container .day-row:hover .day-label{
+    background:var(--md-sys-color-surface-container-highest);
+    color:var(--md-sys-color-on-surface-container-highest);
+} */
+
+.schedule-picker-container .day-container{
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    /* box-shadow: 0 0 0 1px var(--md-sys-color-surface-container-highest) inset; */
+    padding:8px;
+    border-radius:16px;
+    gap:8px 24px;
+}
+.schedule-picker-container .day-content{
+    display:flex;
+    flex-direction:column;    
+    gap:4px;
+}
+
+.schedule-picker-container .day-label{
+    font-size:15px;
+    font-family: "DM Sans", system-ui;
+    font-weight: 500;
+    padding:8px 12px;
+    border-radius:12px;
+    background:var(--md-sys-color-surface-container);
+    color:var(--md-sys-color-on-surface-container)
+}
+
+.schedule-picker-container .day-buttons{
+    display:flex;
+    gap:4px;
+}
+
+.schedule-picker-container .time-slot-container{
+    display:flex;
+    gap:4px;
+}
+.schedule-picker-container .time-slot-separator{
+    display:flex;
+    align-items: center;
+    color:var(--md-sys-color-outline)
+}
+
+.schedule-picker-container input{
+    background:transparent;
+    box-shadow: 0 0 0 1px var(--md-sys-color-surface-container-highest) inset;
+    padding:8px;
+    border-radius:12px;
+    font-size:14px;
+    line-height: normal;
+    font-family: "DM Sans", system-ui;
+}
+.schedule-picker-container input:hover{
+    background:var(--md-sys-color-surface-container-low)
+}
+.schedule-picker-container input:focus{
+    outline:none;
+    box-shadow: 0 0 0 2px var(--md-sys-color-secondary) inset;
+}
+
+.schedule-picker-container .day-label{
+    display:flex;
+    width: 80px;
+}
+
+
+.schedule-picker-container .schedule-picker-message{
+    position:sticky;
+    /* max-width:600px; */
+    z-index: 1;
+    /* animation: schedule-picker-message-in 650ms cubic-bezier(.72,.73,0,1.1); */
+
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap:16px;
+    padding:24px;
+    width: calc(100% - 24px);
+    /* max-width:800px; */
+    background:var(--md-sys-color-surface-container-low);
+    outline: 1px solid var(--md-sys-color-surface-container-highest);
+    border-radius:32px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 0.5px rgba(0,0,0, 0.05), 0px 0.5px 2.5px 0px rgba(0,0,0, 0.16);
+    margin-bottom:8px;
+}
+/* @media only screen and (max-width: 680px){
+    .schedule-picker-container .schedule-picker-message{
+    }
+} */
+
+/* @keyframes schedule-picker-message-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(240px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    
+} */
+
+@keyframes slide-from-right {
+  from { transform: translateX(30px); opacity: 0; }
+}
+
+@keyframes slide-to-left {
+  to { transform: translateX(-30px); opacity: 0; }
+}
+
+::view-transition-old(time-slot),
+::view-transition-old(day-row) {
+  animation: 0.25s ease-out both slide-to-left;
+}
+
+::view-transition-new(time-slot),
+::view-transition-new(day-row) {
+  animation: 0.25s ease-out both slide-from-right;
+}
+
+::view-transition-old(status-message),
+::view-transition-new(status-message) {
+    animation-duration: 0.3s; /* Default is often fine */
+}

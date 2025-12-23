@@ -1,19 +1,18 @@
+// src/core/auth.js
+import { api } from '@core/api.js';
+import { store } from '@core/store.js';
+
 const TOKEN_KEY = 'auth_token';
 
 export const authService = {
     async login(email, password) {
         try {
-            const response = await fetch('/api/auth/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, password })
-            });
-
-            const data = await response.json();
+            const data = await api.post('/auth/login', { email, password });
             
             if (data.ok) {
-                // Guardar token
-                localStorage.setItem(TOKEN_KEY, data.data.session.access_token);
+                const token = data.data.session.access_token;
+                localStorage.setItem(TOKEN_KEY, token);
+                store.setState('user', data.data.user);
                 return { ok: true, data };
             }
             
@@ -25,13 +24,7 @@ export const authService = {
 
     async register(email, password) {
         try {
-            const response = await fetch('/api/auth/register', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, password })
-            });
-
-            const data = await response.json();
+            const data = await api.post('/auth/register', { email, password });
             return data;
         } catch (error) {
             return { ok: false, error: error.message };
@@ -43,13 +36,18 @@ export const authService = {
         if (!token) return false;
 
         try {
-            const response = await fetch('/verification', {
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                }
+            const response = await fetch('/api/verification', {
+                headers: { 'Authorization': `Bearer ${token}` }
             });
 
-            return response.ok;
+
+            if (response.ok) {
+                const data = await response.json();
+                store.setState('user', data.user);
+                return true;
+            }
+            
+            return false;
         } catch {
             return false;
         }
@@ -57,6 +55,7 @@ export const authService = {
 
     logout() {
         localStorage.removeItem(TOKEN_KEY);
+        store.setState('user', null);
         window.location.href = '/login';
     },
 

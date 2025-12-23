@@ -1,0 +1,17 @@
+canvas{
+    background:var(--md-sys-color-surface-container);
+    border-radius:16px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    canvas{
+        background:var(--md-sys-color-on-background);
+        filter:invert(1);
+    }
+    img.signature{
+        filter:invert(1);
+    }
+}
+
+

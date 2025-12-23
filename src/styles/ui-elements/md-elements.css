@@ -1,0 +1,297 @@
+.md-tab{
+  display:none
+}
+.md-tab[active]{
+  display:flex;
+}
+
+[data-md-panel]{display:none;}
+[data-md-panel][active]{display:flex;} 
+
+md-dialog#dialog-lector form{display:none;}
+md-dialog#dialog-lector form[active]{display:flex;}
+#qr-code-reader-container video{border-radius:16px}
+/* md-dialog#dialog-lector.dialog-active {
+}
+
+md-dialog#dialog-lector {
+  transition: opacity 0.3s ease-in-out !important;
+} */
+
+@keyframes buttonClickAnimation {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: scaleX(0.95) scaleY(0.9);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+
+}
+
+
+
+md-filled-button:before{
+    content: '';
+    position: absolute;
+    inset:0;
+    border-radius:inherit;
+    box-shadow:0 0 0 1px color-mix(in srgb, var(--md-sys-color-primary) 80%, black 20%) inset, inset 0 2.4px 0 0 rgba(255,255,255, .3);
+    z-index:1;
+}
+
+@media (prefers-color-scheme: light) {
+  md-filled-tonal-button.solid:before{
+    content: '';
+    position: absolute;
+    inset:0;
+    border-radius:inherit;
+    box-shadow:0 0 0 1px var(--md-sys-color-surface-container-highest) inset, inset 0 2.4px 0 0 rgba(255,255,255, .3);
+    z-index:1;
+  }
+
+}
+
+md-filled-button:focus, 
+md-filled-tonal-button:focus, 
+md-text-button:focus, 
+md-icon-button:focus, 
+md-filled-icon-button:focus, 
+md-filled-tonal-icon-button:focus,
+button.style-7:focus
+{
+  animation: buttonClickAnimation 500ms cubic-bezier(.37,1.42,.37,1);
+}
+md-fab:focus {
+  animation: buttonClickAnimation 500ms cubic-bezier(.37,1.42,.37,1);
+}
+
+@keyframes progress-indicator-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+md-linear-progress{
+  animation : progress-indicator-in  1000ms cubic-bezier(.75,0,.41,-0.06);
+}
+md-circular-progress{
+  animation : progress-indicator-in  1000ms cubic-bezier(.75,0,.41,-0.06);
+}
+
+md-outlined-text-field{
+  --md-outlined-text-field-container-shape: 8px;
+}
+md-outlined-select{
+  --md-outlined-select-text-field-container-shape: 16px;
+}
+
+md-outlined-select.outline-light{
+  --md-outlined-select-text-field-container-shape: 12px;
+  --md-outlined-select-text-field-outline-color: var(--md-sys-color-surface-container-highest);
+  --md-outlined-select-text-field-hover-outline-color: var(--md-sys-color-outline-variant);
+  --md-outlined-select-text-field-focus-outline-color: var(--md-sys-color-outline-variant);
+}
+
+md-outlined-text-field.outline-light{
+  --md-outlined-text-field-container-shape: 12px;
+  --md-outlined-text-field-container-color: var(--md-sys-color-surface-container-highest);
+  --md-outlined-text-field-outline-color: var(--md-sys-color-surface-container-highest);
+  --md-outlined-text-field-hover-outline-color: var(--md-sys-color-outline-variant);
+  --md-outlined-text-field-focus-outline-color: var(--md-sys-color-outline-variant);
+}
+
+
+
+md-filled-text-field{
+  --md-filled-text-field-container-shape: 16px;
+  --md-filled-text-field-active-indicator-height:0px;
+  --md-filled-text-field-focus-active-indicator-height:0px;
+  --md-filled-text-field-hover-active-indicator-height:0px;
+  --md-filled-text-field-disabled-active-indicator-height:0px;
+  --md-filled-text-field-container-color: var(--md-sys-color-surface-container-high);
+}
+
+md-filled-select{
+  --md-filled-select-text-field-container-shape: 16px;
+  --md-filled-select-text-field-active-indicator-height:0px;
+  --md-filled-select-text-field-focus-active-indicator-height:0px;
+  --md-filled-select-text-field-hover-active-indicator-height:0px;
+  --md-filled-select-text-field-container-color: var(--md-sys-color-surface-container-high);
+
+}
+md-filled-select::part(menu){
+  --md-menu-container-shape: 16px;
+}
+
+md-filled-select.style-7{
+  --md-filled-select-text-field-container-color: var(--md-sys-color-surface-container-low) !important;
+  --md-filled-select-text-field-label-text-color: var(--md-sys-color-on-surface-variant);
+  /* --md-filled-select-text-field-container-height: 32px; */
+  --md-filled-select-text-field-input-text-line-height: 16px;
+  --md-filled-select-text-field-container-shape: 12px;
+  /* --md-filled-select-container-shape-end-end:1px; */
+}
+
+md-filled-select.style-modern md-select-option{
+  position:relative;
+  margin:0 8px;
+  border-radius: 8px !important;
+}
+/* md-filled-select.style-modern {
+  --md-menu-item-selected-container-color: var(--md-sys-color-primary-container) !important;
+  --md-sys-color-on-surface: var(--md-sys-color-on-primary-container) !important;
+} */
+
+md-filled-tonal-button.delete{
+  --md-sys-color-secondary-container: var(--md-sys-color-error);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-error);
+}
+md-filled-tonal-button.delete-light{
+  --md-sys-color-secondary-container: var(--md-sys-color-error-container);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-error-container);
+}
+md-filled-tonal-button.delete-text{
+  --md-sys-color-secondary-container: var(--md-sys-color-surface-container);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-error);
+}
+
+md-filled-tonal-icon-button.solid-light, md-filled-tonal-button.solid-light{
+  --md-sys-color-secondary-container: var(--md-sys-color-surface-container-low);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-surface-variant);
+}
+md-filled-tonal-icon-button.solid, md-filled-tonal-button.solid{
+  --md-sys-color-secondary-container: var(--md-sys-color-surface-container);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-surface-variant);
+}
+md-filled-tonal-icon-button.solid-high, md-filled-tonal-button.solid-high{
+  --md-sys-color-secondary-container: var(--md-sys-color-surface-container-high);
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-surface-variant);
+}
+
+md-filled-tonal-icon-button.clear, md-filled-tonal-button.clear{
+  --md-sys-color-secondary-container: transparent;
+  --md-sys-color-on-secondary-container: var(--md-sys-color-on-surface-variant);
+}
+
+md-menu.style-modern{
+  --md-menu-container-shape: 16px;
+  position:relative !important;
+}
+md-menu.style-modern md-menu-item {
+  position:relative;
+  margin:0 8px;
+  border-radius: 8px !important;
+}
+
+
+
+md-filled-button.squared{
+  --md-filled-button-container-shape: 16px;
+}
+
+md-filled-button.primary-primary{
+  --md-filled-button-container-color: var(--md-sys-color-primary-container);
+  --md-filled-button-label-text-color : var(--md-sys-color-on-primary-container);
+}
+
+md-filled-button.primary-container{
+  --md-filled-button-container-color: var(--md-sys-color-primary-container);
+  --md-filled-button-label-text-color : var(--md-sys-color-on-primary-container);
+}
+
+md-filled-text-field[error]{
+  --md-filled-text-field-container-color: var(--md-sys-color-error-container);
+}
+
+md-filled-button.small{
+  --md-filled-button-container-shape: 12px;
+  --md-filled-button-container-height: 32px;
+  --md-filled-button-label-font-size: 8px;
+  --md-filled-button-leading-space: 16px;
+  --md-filled-button-trailing-space: 16px;
+  /* --md-filled-button-label-line-height: 16px; */
+}
+md-filled-tonal-button.small{
+  --md-filled-tonal-button-container-shape: 12px;
+  --md-filled-tonal-button-container-height: 32px;
+  --md-filled-tonal-button-label-font-size: 8px;
+  --md-filled-tonal-button-leading-space: 16px;
+  --md-filled-tonal-button-trailing-space: 16px;
+  /* --md-filled-button-label-line-height: 16px; */
+}
+md-outlined-button.small{
+  --md-outlined-button-container-shape: 12px;
+  --md-outlined-button-container-height: 32px;
+  --md-outlined-button-label-font-size: 8px;
+  --md-outlined-button-leading-space: 16px;
+  --md-outlined-button-trailing-space: 16px;
+  /* --md-outlined-button-label-line-height: 16px; */
+}
+
+
+md-tabs.style-modern{
+  --md-divider-thickness: 0px;
+  --md-divider-color: transparent;
+}
+
+md-tabs.style-modern md-secondary-tab{
+  --md-secondary-tab-container-color: transparent;
+  --md-secondary-tab-container-shape: 64px;
+  --md-secondary-tab-active-indicator-height: 100%;
+  --md-secondary-tab-active-indicator-shape: 64px;
+
+  --md-secondary-tab-active-indicator-color: var(--md-sys-color-primary-container);
+  
+  --md-secondary-tab-active-label-text-color: var(--md-sys-color-on-primary-container);
+  --md-secondary-tab-active-icon-color: var(--md-sys-color-on-primary-container);
+
+  --md-secondary-tab-active-pressed-label-text-color: var(--md-sys-color-on-primary-container);
+  --md-secondary-tab-active-pressed-icon-color: var(--md-sys-color-on-primary-container);
+  --md-secondary-tab-active-hover-label-text-color: var(--md-sys-color-on-primary-container);
+  --md-secondary-tab-active-hover-icon-color: var(--md-sys-color-on-primary-container);
+  --md-secondary-tab-active-focus-icon-color: var(--md-sys-color-on-primary-container);
+  --md-secondary-tab-active-focus-label-text-color: var(--md-sys-color-on-primary-container);
+}
+
+md-tabs.style-3{
+  --md-divider-thickness: 0px;
+  --md-divider-color: transparent;
+}
+
+md-tabs.style-3 md-secondary-tab{
+  --md-secondary-tab-container-color: transparent;
+  --md-secondary-tab-container-shape: 64px;
+  --md-secondary-tab-active-indicator-height: 100%;
+  --md-secondary-tab-active-indicator-shape: 64px;
+
+  --md-secondary-tab-active-indicator-color: var(--md-sys-color-surface-container-high);
+  
+  --md-secondary-tab-active-label-text-color: var(--md-sys-color-on-surface-container-high);
+  --md-secondary-tab-active-icon-color: var(--md-sys-color-on-surface-container-high);
+
+  --md-secondary-tab-active-pressed-label-text-color: var(--md-sys-color-on-surface-container-high);
+  --md-secondary-tab-active-pressed-icon-color: var(--md-sys-color-on-surface-container-high);
+  --md-secondary-tab-active-hover-label-text-color: var(--md-sys-color-on-surface-container-high);
+  --md-secondary-tab-active-hover-icon-color: var(--md-sys-color-on-surface-container-high);
+  --md-secondary-tab-active-focus-icon-color: var(--md-sys-color-on-surface-container-high);
+  --md-secondary-tab-active-focus-label-text-color: var(--md-sys-color-on-surface-container-high);
+}
+
+md-tabs.style-3.slim md-secondary-tab{
+  height:40px;
+}
+
+md-checkbox{
+  --md-checkbox-container-shape: 4px;
+}
+
+md-checkbox.small {
+  --md-checkbox-container-size: 12px;
+  --md-checkbox-icon-size: 12px;
+}

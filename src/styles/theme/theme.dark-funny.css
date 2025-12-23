@@ -1,0 +1,58 @@
+:root,
+:host {
+  color-scheme: light dark;
+  /* Core Palette "Vibe" Mapping */
+  --md-sys-color-primary: #22d3ee;
+  --md-sys-color-secondary: #a78bfa;
+  --md-sys-color-tertiary: #a3f7b5;
+  --md-sys-color-background: #01121a;
+  --md-sys-color-on-background: #e0f4ff;
+
+  /* Surfaces & On-Surfaces (Deep, calm, focused) */
+  --md-sys-color-surface: #01121a;
+  --md-sys-color-on-surface: #e0f4ff;
+  --md-sys-color-surface-dim: #01121a;
+  --md-sys-color-surface-bright: #2a3b43;
+  --md-sys-color-surface-container-lowest: #0e1f29;
+  --md-sys-color-surface-container-low: #1a2c37;
+  --md-sys-color-surface-container: #263945;
+  --md-sys-color-surface-container-high: #324653;
+  --md-sys-color-surface-container-highest: #3e5361;
+  
+  /* Surface Variants & Outlines (Neutral blue-grays) */
+  --md-sys-color-surface-variant: #3f484b;
+  --md-sys-color-on-surface-variant: #bfc8cc;
+  --md-sys-color-outline: #899296;
+  --md-sys-color-outline-variant: #3f484b;
+
+  /* Inverse Colors (For light elements on this dark theme) */
+  --md-sys-color-inverse-surface: #e0f4ff;
+  --md-sys-color-inverse-on-surface: #1c3038;
+  --md-sys-color-inverse-primary: #006874;
+
+  /* Primary Color Family */
+  --md-sys-color-on-primary: #00363d;
+  --md-sys-color-primary-container: #004f58;
+  --md-sys-color-on-primary-container: #9af0ff;
+  
+  /* Secondary Color Family */
+  --md-sys-color-on-secondary: #2d0056;
+  --md-sys-color-secondary-container: #442a72;
+  --md-sys-color-on-secondary-container: #eaddff;
+  
+  /* Tertiary (Accent) Color Family */
+  --md-sys-color-on-tertiary: #00210a;
+  --md-sys-color-tertiary-container: #1f4d2a;
+  --md-sys-color-on-tertiary-container: #befdc0;
+
+  /* Error Colors (Standard, but adapted for dark theme) */
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffdad6;
+
+  /* Other System Colors */
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-surface-tint: var(--md-sys-color-primary); /* #22d3ee */
+}

@@ -1,0 +1,82 @@
+.container-dashboard {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr;
+    height: 100vh; /* o la altura que necesites */
+    grid-template-rows: auto 1fr; /* Primera fila auto, segunda toma el resto */
+}
+
+.container-dashboard .dashboard-card {
+    position: relative;
+    display: flex;
+    /* flex-direction:column; */
+    gap:8px;
+}
+
+.main-mobile-container-display [data-action="open-create-appt-window"]{
+    background:var(--md-sys-color-primary-container);
+    color:var(--md-sys-color-on-primary-container);
+}
+
+@media (min-width: 768px) {
+    .container-dashboard {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr; /* Mantener control de filas */
+    }
+    
+    .dashboard-card.card-5 {
+        grid-column: span 2;
+    }
+    
+    /* Forzar cards 4 y 5 a la segunda fila */
+    .dashboard-card.card-4,
+    .dashboard-card.card-5 {
+        grid-row: 2;
+    }
+}
+
+/* Desktop: 3 columnas */
+@media (min-width: 1024px) {
+    .container-dashboard {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr; /* Mantener control de filas */
+    }
+    
+    .dashboard-card.card-5 {
+        grid-column: span 2; /* Sigue siendo 2 columnas de las 3 */
+    }
+    
+    /* Forzar cards 4 y 5 a la segunda fila */
+    .dashboard-card.card-4,
+    .dashboard-card.card-5 {
+        grid-row: 2;
+    }
+}
+
+
+@media only screen and (max-width: 680px){
+    .main-mobile-container-display{
+        padding:0;
+        gap:8px;
+        background:transparent !important;
+    }
+
+    .main-mobile-container-display >:nth-child(1) {
+        padding-top:0;
+        padding:16px;
+    }
+
+    .main-mobile-display{
+        background:var(--md-sys-color-primary-container);
+        color:var(--md-sys-color-on-primary-container);
+        border-radius:40px;
+        padding:32px;
+    }
+
+    .main-mobile-container-display [data-action="open-create-appt-window"]{
+        background:var(--md-sys-color-on-primary-container);
+        color:var(--md-sys-color-primary-container);
+    }
+
+    
+}

@@ -1,0 +1,81 @@
+.content-box{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+
+  width:100%;
+  height: auto;
+
+  background:var(--md-sys-color-surface-container);
+  /* background:var(--md-sys-color-surface-variant-variant); */
+
+  padding:24px;
+  box-sizing: border-box;
+  border-radius:24px;
+}
+.content-box.light-color{background:var(--md-sys-color-surface-container-low)}
+.content-box.lowest-color{background:var(--md-sys-color-surface-container-lowest)}
+.content-box.transparent{background:var(--md-sys-color-background)}
+/* content divisor */
+.content-box .content-divisor{display:flex; max-width: fit-content;}
+/* .content-box .content-divisor:first-of-type{max-width: fit-content;} */
+/* .content-box .content-divisor:last-of-type{justify-content: flex-end;} */
+.content-box.rounded{border-radius: 40px;}
+
+/* Look variations */
+.content-box.minimal{
+  background:none;
+  padding:0;
+}
+
+/* functionality variations */
+.content-box.card{
+  flex-grow:1;
+  flex-basis: 200px;
+  user-select: none;
+  cursor: pointer;
+  max-height: 300px;
+  overflow: hidden;
+}
+.content-box.card::before{
+  content: "";
+  position:absolute;
+  left:0;right:0;bottom:0;
+  width:100%;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, var(--md-sys-color-surface-container) 95%);
+}
+.content-box.card::-webkit-scrollbar{display:none}
+.content-box.card.small{
+  flex-basis: 64px;
+  transition:box-shadow 125ms;
+
+}
+.content-box.card.small:hover{
+  box-shadow: 0px 0px 0px 1px var(--md-sys-color-outline-variant) inset;
+}
+
+.content-box.card.style-detailed{
+  background:var(--md-sys-color-surface-container-high);
+  border-radius:40px;
+  /* box-shadow: var(--md-sys-color-surface-container-lowest) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.06) 0px 16px 30px 0px; */
+}
+/* .content-box.card:hover{
+  filter: brightness(.98);
+} */
+
+.content-box.style-glass{
+  background:rgba(var(--md-sys-color-neutral-on-background), 0.02);
+  box-shadow: 1px 1px 1px 0px rgba(var(--md-sys-color-neutral-background), 0.60) inset,
+              -1px -1px 1px 0px rgba(var(--md-sys-color-neutral-background), 0.60) inset,
+              0px 0px 16px 0px rgba(var(--md-sys-color-neutral-on-background), 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .content-box.style-glass{
+    /* background:rgba(var(--md-sys-color-neutral-on-background), 0.12); */
+    box-shadow: 1px 1px 1px 0px rgba(var(--md-sys-color-neutral-background), 0.24) inset,
+              -1px -1px 1px 0px rgba(var(--md-sys-color-neutral-background), 0.24) inset;
+  }
+}

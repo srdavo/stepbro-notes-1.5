@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes: API auth
 app.post('/api/auth/login', authController.login);
 app.post('/api/auth/register', authController.register);
-app.get('/verification', authMiddleware, (req, res) => {
+app.get('/api/verification', authMiddleware, (req, res) => {
     res.json({
         ok: true,
         message: "You're logged!",

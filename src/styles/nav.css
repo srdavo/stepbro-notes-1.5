@@ -1,0 +1,36 @@
+nav{
+  display:flex;
+  flex-direction:column;
+  width:240px;
+
+  border-right:1px solid var(--md-sys-color-surface-container);
+  padding:16px;
+}
+
+
+nav button.navbar-button{
+  display:flex;
+  align-items: center;
+  gap:8px;
+  padding:8px 24px;
+  border:none;
+  border-radius:12px;
+
+  background:transparent;
+  color:var(--md-sys-color-outline);
+
+  font-size:16px;
+  cursor:pointer;
+  font-weight: 500;
+}
+
+nav button.navbar-button:hover{
+  background:var(--md-sys-color-surface-container-low);
+}
+
+nav button.navbar-button.active{
+  background: var(--md-sys-color-surface-container);
+}
+nav button.navbar-button.active .material-symbols-rounded {
+  font-variation-settings: 'FILL' 1;
+}

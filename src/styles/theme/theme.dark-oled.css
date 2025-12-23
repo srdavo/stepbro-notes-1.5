@@ -1,0 +1,66 @@
+:root,
+:host {
+  color-scheme: dark;
+
+  /* Fondo principal y color de texto */
+  --md-sys-color-background: #000000;
+  --md-sys-color-on-background: #e4e2e5;
+
+  /* Superficies ajustadas */
+  --md-sys-color-surface: #000000; /* Fondo */
+  --md-sys-color-surface-dim: #0a0a0a; /* Suave diferencia en tono */
+  --md-sys-color-surface-bright: #121214;
+  --md-sys-color-surface-container-lowest: #0a0a0a; /* Muy cercano al fondo */
+  --md-sys-color-surface-container-low: #101012;
+  --md-sys-color-surface-container: #17171a;
+  --md-sys-color-surface-container-high: #202022;
+  --md-sys-color-surface-container-highest: #28282b;
+
+  /* Textos sobre superficies */
+  --md-sys-color-on-surface: #e4e2e5; /* Manteniendo buen contraste con negro puro */
+  --md-sys-color-surface-variant: #3a3d43;
+  --md-sys-color-on-surface-variant: #c5c6ce;
+
+  /* Inversos */
+  --md-sys-color-inverse-surface: #e4e2e5;
+  --md-sys-color-inverse-on-surface: #303033;
+
+  /* Outline */
+  --md-sys-color-outline: #7e8088; /* Ajustado ligeramente para menos contraste */
+  --md-sys-color-outline-variant: #3a3d43;
+
+  /* Sombras */
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+
+  /* Color de realce en superficies */
+  --md-sys-color-surface-tint: #9fb8e4;
+
+  /* Primarios */
+  --md-sys-color-primary: #ffffff;
+  --md-sys-color-on-primary: #000000; /* Ligero ajuste para contraste */
+  --md-sys-color-primary-container: #ffffff;
+  --md-sys-color-on-primary-container: #000000;
+
+  /* Inverso de primarios */
+  --md-sys-color-inverse-primary: #4d5f80;
+
+  /* Secundarios */
+  --md-sys-color-secondary: #b1b9cc;
+  --md-sys-color-on-secondary: #242b37;
+  --md-sys-color-secondary-container: #313641;
+  --md-sys-color-on-secondary-container: #c3c9db;
+
+  /* Terciarios */
+  --md-sys-color-tertiary: #caa3d7;
+  --md-sys-color-on-tertiary: #352339;
+  /* --md-sys-color-tertiary-container: #190626; */
+  --md-sys-color-tertiary-container: #a235c6;
+  --md-sys-color-on-tertiary-container: #a488b0;
+
+  /* Errores */
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffdad6;
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@core/*": ["src/core/*"],
+      "@shared/*": ["src/shared/*"],
+      "@features/*": ["src/features/*"],
+      "@styles/*": ["src/styles/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "public"]
+}

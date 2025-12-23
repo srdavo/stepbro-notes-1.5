@@ -1,0 +1,84 @@
+.theme-selector-parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+.theme-selector-parent .ball{
+    border-radius:50%;
+    aspect-ratio: 1;
+    width: 100%;
+
+    /* display: flex; */
+    position:relative;
+    overflow: hidden;
+    cursor:pointer;
+    transition: box-shadow 0.2s;
+    
+}
+
+.theme-selector-parent .ball[active]{
+    box-shadow: 0 0 0 4px var(--md-sys-color-primary);
+}
+.theme-selector-parent .ball[active]:hover{
+    box-shadow: 0 0 0 5px var(--md-sys-color-primary);
+}
+
+.theme-selector-parent .ball:hover{
+    /* transform: scale(1.05); */
+    box-shadow: 0 0 0 2px var(--md-sys-color-outline-variant);
+}
+
+.theme-selector-parent .ball > span{
+    position: absolute;
+}
+
+.theme-selector-parent .ball > span:nth-child(1){
+    width:50%;
+    height: 100%;
+    left:0;
+}
+.theme-selector-parent .ball > span:nth-child(2){
+    width:50%;
+    height: 50%;
+    top:0;
+    right:0;
+}
+.theme-selector-parent .ball > span:nth-child(3){
+    width:50%;
+    height: 50%;
+    right:0;
+    bottom:0;
+}
+
+
+.nav-selector-parent .nav-option{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow:1;
+    flex-basis:125px;
+    padding: 16px 0;
+
+    background:var(--md-sys-color-surface-container);
+    color:var(--md-sys-color-on-surface-container);
+    cursor:pointer;
+
+    border-radius:12px;
+    transition: background 200ms, color 200ms, border-radius 500ms; 
+    user-select:none;
+}
+/* .nav-selector-parent .nav-option:first-child{border-radius: 8px 0 0 8px;}
+.nav-selector-parent .nav-option:last-child{border-radius: 0 8px 8px 0;} */
+
+.nav-selector-parent .nav-option[active]{
+    border-radius:64px;
+    background:var(--md-sys-color-primary-container);
+    color:var(--md-sys-color-on-primary-container);
+    /* background:var(--md-sys-color-surface-container-highest);
+    box-shadow: 0 0 0 1px var(--md-sys-color-outline-variant) inset; */
+}
+
+

@@ -1,0 +1,2 @@
+@import url(../theme.light-black.css) (prefers-color-scheme: light);
+@import url(../theme.dark-oled.css) (prefers-color-scheme: dark);

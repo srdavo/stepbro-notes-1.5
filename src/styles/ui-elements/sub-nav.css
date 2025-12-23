@@ -1,0 +1,40 @@
+.sub-nav-parent{
+    padding-left:0px;
+}
+.sub-nav{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+
+    width: auto;
+    height: 100%;
+}
+.sub-nav button.sub-nav-button{
+    display:flex;
+    align-items: center;
+    gap:8px;
+
+    padding:8px 16px;
+    padding-right:20px;
+
+    border-radius:16px;
+    font-size:14px;
+    line-height: 14px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    
+    border:none;
+    cursor:pointer;
+    background:transparent;
+}
+.sub-nav button.sub-nav-button[active]{
+    background:var(--md-sys-color-primary-container);
+    color:var(--md-sys-color-on-primary-container);
+}
+
+
+@media only screen and (max-width: 680px){
+    .sub-nav-parent{
+        padding-left:16px;
+    }
+}

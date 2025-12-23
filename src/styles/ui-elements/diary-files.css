@@ -1,0 +1,76 @@
+.diary-note{
+    position:relative;
+    display:flex;
+    align-items: center;
+    gap:8px;
+    max-width:100%;
+    overflow: hidden;
+    padding:0 16px;
+    min-height: 24px;
+    
+    color:var(--md-sys-color-on-background);
+    border-radius:16px;
+    overflow:hidden;
+    transition: 
+        border-radius 0.2s, 
+        max-width 0.7s cubic-bezier(0.1, 0.8, 0, 1), 
+        padding 0.7s cubic-bezier(0.1, 0.8, 0, 1),
+        background 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+    ;
+    transform-origin:top;
+}
+
+.diary-note span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+.diary-box {
+    cursor:pointer;
+}
+
+.diary-content {
+    overflow-y: auto; 
+    white-space: nowrap;
+}
+
+.diary-content::-webkit-scrollbar {
+    display: none;
+}
+
+.task {
+    position:relative;
+    display:flex;
+    align-items: center;
+    gap:8px;
+
+    
+
+    width:85%;
+    padding:8px 24px;
+    min-height: 24px;
+    
+    color:var(--md-sys-color-on-background);
+    background-color: black;
+    border-radius:16px;
+    overflow:hidden;
+    transition: 
+        border-radius 0.2s, 
+        max-width 0.7s cubic-bezier(0.1, 0.8, 0, 1), 
+        padding 0.7s cubic-bezier(0.1, 0.8, 0, 1),
+        background 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+    ;
+    transform-origin:top;
+}
+
+.task:hover {
+    cursor: pointer;
+}
+
+.task:active {
+    background-color: #eaeaea;
+    border-color: #bbb;
+}

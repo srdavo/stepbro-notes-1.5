@@ -1,0 +1,41 @@
+:root,
+:host {
+  --md-sys-color-background: #FAF5F0; /* Arena muy clara, casi blanca, para el fondo */
+  --md-sys-color-on-background: #332C27; /* Marrón oscuro, rico, para texto sobre fondo claro */
+  --md-sys-color-surface: #FAF5F0; /*  Igual que el fondo, para consistencia */
+  --md-sys-color-surface-dim: #E8E3DE; /* Tono ligeramente más oscuro para diferenciar capas sutilmente */
+  --md-sys-color-surface-bright: #FAF5F0; /*  Igual que surface para brillo */
+  --md-sys-color-surface-container-lowest: #FFFFFF; /* Blanco puro para la capa más baja, similar a la arena muy clara */
+  --md-sys-color-surface-container-low: #F2EDE8; /* Contenedor bajo, como arena clara */
+  --md-sys-color-surface-container: #ECE7E2; /* Contenedor estándar, tono arena medio */
+  --md-sys-color-surface-container-high: #E5E0DB; /* Contenedor alto, arena un poco más oscura */
+  --md-sys-color-surface-container-highest: #DFDAD5; /* Contenedor superior, el más oscuro de los contenedores arena */
+  --md-sys-color-on-surface: #332C27; /* Texto sobre superficies, consistente con on-background */
+  --md-sys-color-surface-variant: #E1DDD8; /* Variante de superficie, como arena con ligeros matices grises */
+  --md-sys-color-on-surface-variant: #5B5550; /* Texto en surface-variant, contraste apropiado */
+  --md-sys-color-inverse-surface: #47403B; /* Superficie inversa, tono marrón más profundo */
+  --md-sys-color-inverse-on-surface: #F3EEE9; /* Texto sobre superficie inversa, color crema para contraste */
+  --md-sys-color-outline: #7D7772; /* Bordes y líneas, como ramas finas */
+  --md-sys-color-outline-variant: #C9C3BE; /* Bordes variantes, muy sutiles */
+  --md-sys-color-shadow: #000000; /* Sombra estándar, negro */
+  --md-sys-color-scrim: #000000; /* Scrim, negro */
+  --md-sys-color-surface-tint: #8C6F57; /* Tinte de superficie con el primario, color tierra */
+  --md-sys-color-primary: #6B4A31; /* Marrón tierra intenso, color primario principal */
+  --md-sys-color-on-primary: #FFFFFF; /* Blanco para texto sobre primario, alto contraste */
+  --md-sys-color-primary-container: #A7856B; /* Contenedor de primario, marrón tierra más claro */
+  --md-sys-color-on-primary-container: #FFFFFF; /* Blanco para texto sobre contenedor primario */
+  --md-sys-color-inverse-primary: #C4A68D; /* Primario inverso, un marrón más suave y claro */
+  --md-sys-color-secondary: #5A6B54; /* Verde oliva oscuro, como hojas perennes, secundario */
+  --md-sys-color-on-secondary: #FFFFFF; /* Blanco para texto sobre secundario */
+  --md-sys-color-secondary-container: #8EA088; /* Contenedor de secundario, verde oliva más claro */
+  --md-sys-color-on-secondary-container: #273822; /* Verde muy oscuro para texto en contenedor secundario, creando foco sutil */
+  --md-sys-color-tertiary: #A7856B; /* Marrón tierra claro, repitiendo el tono del primario container para cohesión */
+  --md-sys-color-on-tertiary: #FFFFFF; /* Blanco para texto sobre terciario */
+  --md-sys-color-tertiary-container: #C4A68D; /* Contenedor de terciario, un marrón aún más claro */
+  --md-sys-color-on-tertiary-container: #332C27; /* Marrón oscuro para texto en contenedor terciario, similar al on-background para consistencia */
+  --md-sys-color-error: #B33A3A; /* Rojo ladrillo apagado para error, evocando arcilla roja */
+  --md-sys-color-on-error: #FFFFFF; /* Blanco para texto sobre error, máximo contraste */
+  --md-sys-color-error-container: #FFDAD4; /* Contenedor de error, un tono más claro del rojo ladrillo */
+  --md-sys-color-on-error-container: #410002; /* Tono muy oscuro del input #332C27 para texto en contenedor de error */
+  --md-sys-color-surface-variant-variant: var(--md-ref-palette-neutral-variant95); /* Variable de superficie variante */
+}

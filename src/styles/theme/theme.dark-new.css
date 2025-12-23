@@ -1,0 +1,42 @@
+:root,
+:host {
+  color-scheme: light dark;
+  --md-sys-color-background: #211A15; /* Marrón muy oscuro, como tierra fértil nocturna, fondo oscuro */
+  --md-sys-color-on-background: #F3EEE9; /* Color crema claro para texto sobre fondo oscuro */
+  --md-sys-color-surface: #211A15; /* Igual que el fondo para superficies oscuras */
+  --md-sys-color-surface-dim: #211A15; /* Igual que surface para dim en oscuro */
+  --md-sys-color-surface-bright: #3F3833; /* Superficie brillante en oscuro, como tierra húmeda */
+  --md-sys-color-surface-container-lowest: #1A130E; /* Contenedor más bajo, aún más oscuro que el fondo */
+  --md-sys-color-surface-container-low: #28211C; /* Contenedor bajo, como tierra compacta */
+  --md-sys-color-surface-container: #2F2823; /* Contenedor estándar en modo oscuro, tono tierra medio oscuro */
+  --md-sys-color-surface-container-high: #3A332E; /* Contenedor alto, tierra ligeramente más clara */
+  --md-sys-color-surface-container-highest: #453E39; /* Contenedor más alto, el más claro de los contenedores oscuros */
+  --md-sys-color-on-surface: #F3EEE9; /* Texto sobre superficies oscuras, crema claro */
+  --md-sys-color-surface-variant: #3F3833; /* Variante de superficie, tono marrón grisáceo oscuro, como rocas sombreadas */
+  --md-sys-color-on-surface-variant: #E1DDD8; /* Texto en variante de superficie oscura, color arena claro para contraste */
+  --md-sys-color-inverse-surface: #F3EEE9; /* Superficie inversa, muy clara para modo oscuro, como arena iluminada por la luna */
+  --md-sys-color-inverse-on-surface: #47403B; /* Texto sobre superficie inversa clara, marrón profundo para contraste */
+  --md-sys-color-outline: #8E8883; /* Bordes en modo oscuro, tono grisáceo tierra */
+  --md-sys-color-outline-variant: #3F3833; /* Bordes variantes en oscuro, más oscuros y sutiles */
+  --md-sys-color-shadow: #000000; /* Sombra estándar, negro */
+  --md-sys-color-scrim: #000000; /* Scrim, negro */
+  --md-sys-color-surface-tint: #C4A68D; /* Tinte de superficie con el primario en oscuro, marrón claro */
+  --md-sys-color-primary: #C4A68D; /* Primario en modo oscuro, tono marrón claro y suave, como madera pulida */
+  --md-sys-color-on-primary: #332C27; /* Marrón oscuro para texto sobre primario en modo oscuro */
+  --md-sys-color-primary-container: #A7856B; /* Contenedor de primario, tono marrón tierra medio */
+  --md-sys-color-on-primary-container: #FFFFFF; /* Blanco para texto sobre contenedor primario */
+  --md-sys-color-inverse-primary: #A7856B; /* Primario inverso, repitiendo el tono del contenedor primario */
+  --md-sys-color-secondary: #C2D3BD; /* Verde oliva claro, como hojas plateadas bajo la luna, secundario en oscuro */
+  --md-sys-color-on-secondary: #273822; /* Verde muy oscuro para texto sobre secundario en oscuro */
+  --md-sys-color-secondary-container: #5A6B54; /* Contenedor de secundario, verde oliva oscuro, tono medio en oscuro */
+  --md-sys-color-on-secondary-container: #E1DDD8; /* Arena clara para texto sobre contenedor secundario en oscuro */
+  --md-sys-color-tertiary: #A7856B; /* Marrón tierra medio, repitiendo el tono del contenedor primario para terciario */
+  --md-sys-color-on-tertiary: #332C27; /* Marrón oscuro para texto sobre terciario en oscuro */
+  --md-sys-color-tertiary-container: #C4A68D; /* Contenedor de terciario, repitiendo el primario oscuro */
+  --md-sys-color-on-tertiary-container: #332C27; /* Marrón oscuro para texto en contenedor terciario en oscuro */
+  --md-sys-color-error: #FFB3A8; /* Error en modo oscuro, tono coral apagado, como arcilla roja al atardecer */
+  --md-sys-color-on-error: #332C27; /* Marrón oscuro para texto sobre error en modo oscuro, para mantener la paleta */
+  --md-sys-color-error-container: #B33A3A; /* Contenedor de error, usando el rojo ladrillo original */
+  --md-sys-color-on-error-container: #FFDAD4; /* Muy claro para texto en contenedor de error, tono arena */
+  --md-sys-color-surface-variant-variant: var(--md-ref-palette-neutral-variant20); /* Variable de superficie variante para oscuro */
+}

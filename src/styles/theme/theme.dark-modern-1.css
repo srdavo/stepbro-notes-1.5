@@ -1,0 +1,165 @@
+:root,
+:host {
+  color-scheme: light dark;
+  --md-sys-color-background: #10131c;
+  --md-sys-color-on-background: #e1e2ee;
+  --md-sys-color-surface: #10131c;
+  --md-sys-color-surface-dim: #10131c;
+  --md-sys-color-surface-bright: #363943;
+  --md-sys-color-surface-container-lowest: #0b0e16;
+  --md-sys-color-surface-container-low: #191b24;
+  --md-sys-color-surface-container: #1d1f28;
+  --md-sys-color-surface-container-high: #272a33;
+  --md-sys-color-surface-container-highest: #32343e;
+  --md-sys-color-on-surface: #e1e2ee;
+  --md-sys-color-surface-variant: #424656;
+  --md-sys-color-on-surface-variant: #c2c6d8;
+  --md-sys-color-inverse-surface: #e1e2ee;
+  --md-sys-color-inverse-on-surface: #2e303a;
+  --md-sys-color-outline: #8c90a1;
+  --md-sys-color-outline-variant: #424656;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-surface-tint: #b3c5ff;
+  --md-sys-color-primary: #b3c5ff;
+  --md-sys-color-on-primary: #002b75;
+  --md-sys-color-primary-container: #005eeb;
+  --md-sys-color-on-primary-container: #ffffff;
+  --md-sys-color-inverse-primary: #0054d6;
+  --md-sys-color-secondary: #b3c5ff;
+  --md-sys-color-on-secondary: #0a2c6e;
+  --md-sys-color-secondary-container: #1c397b;
+  --md-sys-color-on-secondary-container: #c1cfff;
+  --md-sys-color-tertiary: #f0b0ff;
+  --md-sys-color-on-tertiary: #54006d;
+  --md-sys-color-tertiary-container: #a235c6;
+  --md-sys-color-on-tertiary-container: #ffffff;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffdad6;
+  --md-sys-color-surface-variant-variant: var(--md-ref-palette-neutral-variant20);
+}
+
+body{
+    background:url(https://i.ibb.co/X4zjbmR/882-1x-shots-so.png);
+    /* background:url(	https://i.ibb.co/WPZ2QhV/235shots-so-1.png); */
+    /* background:url(	https://i.ibb.co/6NqZzmQ/520shots-so.png); */
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+nav{
+    background:transparent !important;
+    /* background:rgba(255,255,255,0.24) !important; */
+    /* margin:8px; */
+    margin-right:0;
+    border-radius: 0;
+    /* width:auto; */
+    height:auto;
+    /* backdrop-filter: blur(2px); */
+    /* box-shadow: 0 0 0 1px var(--md-sys-color-surface-container-low) ; */
+}
+
+main{
+    max-width:calc(100% - 64px);
+    max-height: calc(100% - 64px);
+    background:rgba(0,0,0,0.80);
+    backdrop-filter: blur(16px);
+    border-radius:8px;
+    box-shadow: 0 0 0 12px rgba(0,0,0,0.48);
+    /* box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.24), 0px 8px 40px 0px rgba(0, 0, 0, 0.16); */
+}
+
+holder{
+    margin:0px;
+    background: transparent;
+    /* background:rgba(255,255,255,0.72) !important; */
+    /* box-shadow: 0 0 0 1px var(--md-sys-color-surface-container-low) inset; */
+
+}
+
+
+.quick-note-editor-parent{
+    background:rgba(0, 0, 0, 0.16);
+    /* backdrop-filter: blur(16px); */
+}
+
+.content-box, .content-box.light-color{
+    background:rgba(0, 0, 0, 0.24);
+    /* backdrop-filter: blur(32px); */
+}
+.content-box.transparent{
+    background:rgba(0, 0, 0, 0.32);
+    /* backdrop-filter: blur(24px); */
+}
+
+#main-folders-parents-container.view-grid .content-box.light-color{
+    background: var(--md-sys-color-background);
+    /* background:rgba(0, 0, 0, 0.64);
+    backdrop-filter: blur(24px); */
+}
+
+#main-folders-parents-container.view-grid #folders-note-parent {
+    background: var(--md-sys-color-background);
+}
+
+
+.folders-parent{
+
+    box-shadow: 0 0 0 1px var(--md-sys-color-surface-container) inset;
+    /* box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.24), 0px 8px 40px 0px rgba(0, 0, 0, 0.16); */
+}
+
+window{
+    background:rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(32px);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.24), 0px 8px 40px 0px rgba(0, 0, 0, 0.16);
+}
+
+
+nav button.nav-button:hover span.icon-holder{background:rgba(0, 0, 0, 0.32); color:var(--md-sys-color-on-surface);}
+
+
+input.pretty{
+    box-shadow: 0 0 0 1px var(--md-sys-color-surface-container-lowest) inset;
+    background: rgba(0, 0, 0, 0.32);
+}
+
+@media only screen and (min-width: 680px){
+    nav.nav-style-3{
+        box-shadow: 0 0 0 1px var(--md-sys-color-surface-container);
+    }
+}
+
+
+@media only screen and (max-width: 680px){
+    main{
+        max-width:initial;
+        max-height: initial;
+        background:rgba(0,0,0,0.80);
+        backdrop-filter: blur(16px);
+        border-radius:initial;
+    }
+    
+    #main-folders-parents-container .content-box.light-color{
+        background: var(--md-sys-color-background);
+        /* background:rgba(0, 0, 0, 0.80);
+        backdrop-filter: blur(8px); */
+    }
+
+    .w-nav-parent{
+        background:rgba(0, 0, 0, 0.80) !important;
+        backdrop-filter: blur(24px);
+        background:transparent
+    }
+
+    #folders-note-parent {
+        background: var(--md-sys-color-background);
+        backdrop-filter: blur(16px);
+        margin: 0 -8px;
+        padding: 24px;
+        width: auto;
+        height: auto;
+    }
+}

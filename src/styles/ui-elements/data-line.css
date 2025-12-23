@@ -1,0 +1,42 @@
+.data-line {
+  position:relative;
+  user-select: none;
+  /* cursor:default; */
+  width: fit-content;
+  padding:4px 8px;
+  border-radius: 16px;
+  background: var(--md-sys-color-surface-container-highest);
+  transition: box-shadow 500ms;
+}
+.data-line.light-color{background:var(--md-sys-color-surface-container-low)}
+
+.data-line.icon{
+  display:flex;
+  align-items: center;
+  gap:4px;
+  padding-inline:6px 10px;
+}
+.data-line.no-wrap{
+  min-width: max-content;
+}
+
+.data-line.square{
+  padding:2px 6px;
+  border-radius: 12px;
+}
+.data-line.squared{
+  padding:2px 6px;
+  border-radius: 12px;
+}
+.data-line.incresed{
+  padding:6px 12px;
+  border-radius: 24px;
+}
+
+.data-line.interactive:hover{
+  cursor:pointer;
+}
+
+.data-line.selectable{
+  user-select: all;
+}

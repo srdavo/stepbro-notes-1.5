@@ -1,0 +1,42 @@
+:root,
+:host {
+  color-scheme: light dark;
+  --md-sys-color-background: #0A120D; /* Verde muy oscuro, casi negro, como pizarra verde, fondo oscuro profesional y moderno */
+  --md-sys-color-on-background: #DEF2E5; /* Verde muy claro para texto sobre fondo oscuro, legibilidad y frescura */
+  --md-sys-color-surface: #0A120D; /* Verde oscuro para superficies oscuras, coherencia y sobriedad moderna */
+  --md-sys-color-surface-dim: #0A120D; /* Igual que surface para dim en modo oscuro corporativo verde */
+  --md-sys-color-surface-bright: #232B26; /* Gris verdoso muy oscuro para superficie brillante en oscuro, diferenciación profesional */
+  --md-sys-color-surface-container-lowest: #060B09; /* Contenedor más bajo, verde aún más oscuro */
+  --md-sys-color-surface-container-low: #121A16; /* Contenedor bajo, verde oscuro */
+  --md-sys-color-surface-container: #18211D; /* Contenedor estándar en modo oscuro corporativo verde, verde medio oscuro */
+  --md-sys-color-surface-container-high: #212A25; /* Contenedor alto, verde ligeramente más claro */
+  --md-sys-color-surface-container-highest: #2A332E; /* Contenedor más alto, el más claro de los contenedores verdes oscuros */
+  --md-sys-color-on-surface: #DEF2E5; /* Texto sobre superficies oscuras, consistente con on-background en modo oscuro */
+  --md-sys-color-surface-variant: #232B26; /* Variante de superficie, gris verdoso muy oscuro, textura profesional moderna */
+  --md-sys-color-on-surface-variant: #C0C5C2; /* Verde grisáceo claro para texto en variante de superficie oscura, sutileza profesional */
+  --md-sys-color-inverse-surface: #DEF2E5; /* Superficie inversa, verde muy claro para modo oscuro corporativo verde */
+  --md-sys-color-inverse-on-surface: #232B27; /* Verde oscuro grisáceo para texto sobre superficie inversa clara, contraste inverso */
+  --md-sys-color-outline: #717975; /* Bordes en modo oscuro, verde grisáceo oscuro y profesional */
+  --md-sys-color-outline-variant: #353D39; /* Bordes variantes en oscuro corporativo verde, más oscuros y profesionales */
+  --md-sys-color-shadow: #000000; /* Sombra estándar, negro */
+  --md-sys-color-scrim: #000000; /* Scrim, negro */
+  --md-sys-color-surface-tint: #A3FFB7; /* Verde pálido para tinte de superficie, suavidad profesional y moderna */
+  --md-sys-color-primary: #A3FFB7; /* Verde pálido, primario principal en modo oscuro Corporativo Verde, discreto y moderno */
+  --md-sys-color-on-primary: #000000; /* Negro para texto sobre primario verde pálido, contraste máximo y profesional */
+  --md-sys-color-primary-container: #00D434; /* Verde esmeralda brillante, contenedor de primario en modo oscuro Corporativo Verde, enfoque y energía */
+  --md-sys-color-on-primary-container: #000000; /* Negro para texto sobre contenedor primario verde esmeralda, contraste fuerte y legible */
+  --md-sys-color-inverse-primary: #00D434; /* Primario inverso, repitiendo el tono del contenedor primario verde esmeralda */
+  --md-sys-color-secondary: #A7BEAC; /* Verde grisáceo claro, secundario en modo oscuro Corporativo Verde, sutil y moderno */
+  --md-sys-color-on-secondary: #000000; /* Negro para texto sobre secundario verde grisáceo claro */
+  --md-sys-color-secondary-container: #556B59; /* Verde grisáceo medio oscuro, contenedor de secundario en modo oscuro Corporativo Verde, discreto */
+  --md-sys-color-on-secondary-container: #FFFFFF; /* Blanco para texto sobre contenedor secundario verde grisáceo medio, claridad */
+  --md-sys-color-tertiary: #A7BEAC; /* Verde grisáceo claro, repitiendo el tono del contenedor secundario para terciario en modo oscuro Corporativo Verde */
+  --md-sys-color-on-tertiary: #000000; /* Negro para texto sobre terciario verde grisáceo claro */
+  --md-sys-color-tertiary-container: #708574; /* Verde grisáceo medio, contenedor de terciario en modo oscuro Corporativo Verde, aún sutil */
+  --md-sys-color-on-tertiary-container: #FFFFFF; /* Blanco para texto en contenedor terciario verde grisáceo medio, claridad */
+  --md-sys-color-error: #FFB3A8; /* Rojo coral claro para error en modo oscuro Corporativo Verde, destaca con sobriedad */
+  --md-sys-color-on-error: #000000; /* Negro para texto sobre error rojo coral claro en modo oscuro Corporativo Verde */
+  --md-sys-color-error-container: #B00020; /* Rojo oscuro, contenedor de error en modo oscuro Corporativo Verde, tono profundo y serio */
+  --md-sys-color-on-error-container: #FFDAD6; /* Beige muy claro para texto en contenedor de error rojo oscuro, legibilidad sobre oscuro */
+  --md-sys-color-surface-variant-variant: var(--md-ref-palette-neutral-variant20); /* Variable de superficie variante para oscuro Corporativo Verde */
+}

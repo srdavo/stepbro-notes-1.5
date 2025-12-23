@@ -1,0 +1,41 @@
+:root,
+:host {
+  --md-sys-color-background: #FFF9F0; /* Beige muy claro, casi blanco, con un sutil toque cálido, fondo suave y acogedor */
+  --md-sys-color-on-background: #211A15; /* Marrón muy oscuro, casi negro, para texto, contraste cálido y profesional */
+  --md-sys-color-surface: #FFF9F0; /* Similar al fondo para superficies claras, continuidad y calidez sutil */
+  --md-sys-color-surface-dim: #F0EEE0; /* Tono ligeramente más oscuro para diferenciar capas sutilmente, profundidad suave */
+  --md-sys-color-surface-bright: #FFF9F0; /* Igual que surface para brillo en modo claro, uniformidad cálida */
+  --md-sys-color-surface-container-lowest: #FFFFFF; /* Blanco puro para la capa más baja en modo claro, la más luminosa */
+  --md-sys-color-surface-container-low: #F7F4E8; /* Contenedor bajo, beige claro cálido */
+  --md-sys-color-surface-container: #F2EFE0; /* Contenedor estándar en modo claro, beige medio cálido */
+  --md-sys-color-surface-container-high: #EDEAE5; /* Contenedor alto, beige ligeramente más oscuro cálido */
+  --md-sys-color-surface-container-highest: #E8E5DB; /* Contenedor superior, el más oscuro de los contenedores beige cálidos */
+  --md-sys-color-on-surface: #211A15; /* Texto sobre superficies claras, consistente con on-background en modo claro */
+  --md-sys-color-surface-variant: #EEEBE3; /* Variante de superficie clara, un beige cálido sutil */
+  --md-sys-color-on-surface-variant: #59534D; /* Texto en surface-variant claro, contraste profesional y cálido */
+  --md-sys-color-inverse-surface: #3A332E; /* Superficie inversa clara, marrón oscuro cálido, tono profesional */
+  --md-sys-color-inverse-on-surface: #F7F4E8; /* Beige claro cálido para texto sobre superficie inversa, legible y cálido */
+  --md-sys-color-outline: #7E7873; /* Bordes y líneas en modo claro, marrón suave y profesional */
+  --md-sys-color-outline-variant: #CFCAC5; /* Bordes variantes en claro, muy sutiles y discretos */
+  --md-sys-color-shadow: #000000; /* Sombra estándar, negro */
+  --md-sys-color-scrim: #000000; /* Scrim, negro */
+  --md-sys-color-surface-tint: #FF9100; /* Naranja brillante para tinte de superficie, acento corporativo moderno */
+  --md-sys-color-primary: #F47700; /* Naranja intenso, color primario principal para modo claro, energía y dinamismo */
+  --md-sys-color-on-primary: #FFFFFF; /* Blanco para texto sobre primario naranja intenso, contraste limpio y profesional */
+  --md-sys-color-primary-container: #FFB347; /* Naranja más claro y suave, contenedor de primario en modo claro, acento cálido */
+  --md-sys-color-on-primary-container: #000000; /* Negro para texto sobre contenedor primario naranja suave, máximo contraste */
+  --md-sys-color-inverse-primary: #FFC988; /* Naranja pálido, primario inverso, suave pero visible */
+  --md-sys-color-secondary: #6E5A4D; /* Marrón grisáceo medio oscuro, secundario para modo claro, profesional y discreto */
+  --md-sys-color-on-secondary: #FFFFFF; /* Blanco para texto sobre secundario marrón grisáceo, claridad y legibilidad */
+  --md-sys-color-secondary-container: #B9A598; /* Marrón grisáceo claro, contenedor de secundario en modo claro, sutil y profesional */
+  --md-sys-color-on-secondary-container: #000000; /* Negro para texto en contenedor secundario marrón grisáceo, contraste profesional */
+  --md-sys-color-tertiary: #877366; /* Marrón grisáceo medio, terciario para modo claro, muy discreto y profesional */
+  --md-sys-color-on-tertiary: #FFFFFF; /* Blanco para texto sobre terciario marrón grisáceo medio, claridad y contraste */
+  --md-sys-color-tertiary-container: #CDC5BE; /* Marrón grisáceo muy claro, contenedor de terciario en modo claro, muy sutil */
+  --md-sys-color-on-tertiary-container: #000000; /* Negro para texto en contenedor terciario marrón grisáceo muy claro, contraste */
+  --md-sys-color-error: #B00020; /* Rojo oscuro para error, manteniendo seriedad y alerta */
+  --md-sys-color-on-error: #FFFFFF; /* Blanco para texto sobre error, máximo contraste */
+  --md-sys-color-error-container: #FFDAD6; /* Contenedor de error, un tono más claro del rojo oscuro, suavizando el error */
+  --md-sys-color-on-error-container: #410002; /* Tono muy oscuro para texto en contenedor de error, similar al on-background en claro */
+  --md-sys-color-surface-variant-variant: var(--md-ref-palette-neutral-variant95); /* Variable de superficie variante para claro */
+}

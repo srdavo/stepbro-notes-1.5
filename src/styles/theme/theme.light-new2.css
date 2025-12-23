@@ -1,0 +1,41 @@
+:root,
+:host {
+  --md-sys-color-background: #F0FAF5; /* Verde muy claro, casi blanco, como papel ecológico, fondo fresco y moderno */
+  --md-sys-color-on-background: #0A1A12; /* Verde muy oscuro, casi negro, para texto, contraste fuerte y legible */
+  --md-sys-color-surface: #F0FAF5; /* Similar al fondo para superficies claras, continuidad fresca y moderna */
+  --md-sys-color-surface-dim: #E0EAE5; /* Tono ligeramente más oscuro para diferenciar capas sutilmente, profundidad sutil */
+  --md-sys-color-surface-bright: #F0FAF5; /* Igual que surface para brillo en modo claro, uniformidad visual */
+  --md-sys-color-surface-container-lowest: #FFFFFF; /* Blanco puro para la capa más baja en modo claro, la más luminosa */
+  --md-sys-color-surface-container-low: #E7F2EC; /* Contenedor bajo, verde claro suave */
+  --md-sys-color-surface-container: #DFEDE5; /* Contenedor estándar en modo claro, verde claro medio */
+  --md-sys-color-surface-container-high: #D6E5DC; /* Contenedor alto, verde claro ligeramente más oscuro */
+  --md-sys-color-surface-container-highest: #CEDDE3; /* Contenedor superior, el más oscuro de los contenedores verdes claros */
+  --md-sys-color-on-surface: #0A1A12; /* Texto sobre superficies claras, consistente con on-background en modo claro */
+  --md-sys-color-surface-variant: #E1E6E3; /* Variante de superficie clara, un gris verdoso muy sutil */
+  --md-sys-color-on-surface-variant: #424A46; /* Texto en surface-variant claro, contraste profesional y adecuado */
+  --md-sys-color-inverse-surface: #232B27; /* Superficie inversa clara, verde oscuro grisáceo, tono moderno */
+  --md-sys-color-inverse-on-surface: #EFF4F1; /* Verde muy claro para texto sobre superficie inversa, fresco y legible */
+  --md-sys-color-outline: #6A726D; /* Bordes y líneas en modo claro, verde grisáceo suave y profesional */
+  --md-sys-color-outline-variant: #C0C5C2; /* Bordes variantes en claro, muy sutiles y discretos */
+  --md-sys-color-shadow: #000000; /* Sombra estándar, negro */
+  --md-sys-color-scrim: #000000; /* Scrim, negro */
+  --md-sys-color-surface-tint: #33FF57; /* Verde neón brillante para tinte de superficie, acento moderno y energético */
+  --md-sys-color-primary: #00D434; /* Verde esmeralda brillante, color primario principal para modo claro, energía y crecimiento */
+  --md-sys-color-on-primary: #000000; /* Negro para texto sobre primario verde esmeralda, contraste limpio y profesional */
+  --md-sys-color-primary-container: #69FF85; /* Verde lima potente, contenedor de primario en modo claro, acento vibrante */
+  --md-sys-color-on-primary-container: #000000; /* Negro para texto sobre contenedor primario verde lima, máximo contraste */
+  --md-sys-color-inverse-primary: #A3FFB7; /* Verde pálido, primario inverso, suave pero visible */
+  --md-sys-color-secondary: #556B59; /* Verde grisáceo medio oscuro, secundario para modo claro, profesional y discreto */
+  --md-sys-color-on-secondary: #FFFFFF; /* Blanco para texto sobre secundario verde grisáceo, claridad y legibilidad */
+  --md-sys-color-secondary-container: #A7BEAC; /* Verde grisáceo claro, contenedor de secundario en modo claro, sutil y profesional */
+  --md-sys-color-on-secondary-container: #000000; /* Negro para texto en contenedor secundario verde grisáceo, contraste profesional */
+  --md-sys-color-tertiary: #708574; /* Verde grisáceo medio, terciario para modo claro, muy discreto y profesional */
+  --md-sys-color-on-tertiary: #FFFFFF; /* Blanco para texto sobre terciario verde grisáceo medio, claridad y contraste */
+  --md-sys-color-tertiary-container: #C9D4CD; /* Verde grisáceo muy claro, contenedor de terciario en modo claro, muy sutil */
+  --md-sys-color-on-tertiary-container: #000000; /* Negro para texto en contenedor terciario verde grisáceo muy claro, contraste */
+  --md-sys-color-error: #B00020; /* Rojo oscuro para error, manteniendo seriedad y alerta */
+  --md-sys-color-on-error: #FFFFFF; /* Blanco para texto sobre error, máximo contraste */
+  --md-sys-color-error-container: #FFDAD6; /* Contenedor de error, un tono más claro del rojo oscuro, suavizando el error */
+  --md-sys-color-on-error-container: #410002; /* Tono muy oscuro para texto en contenedor de error, similar al on-background en claro */
+  --md-sys-color-surface-variant-variant: var(--md-ref-palette-neutral-variant95); /* Variable de superficie variante para claro */
+}
